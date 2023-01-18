@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script crossorigin="anonymous" src="assets/app.js"></script>
+    <title>Navegação e busca por comandos de voz - passo 1</title>
+  </head>
+
+  <body>
+  
+    <form id="speech-search" method="get" role="search">
+        
+       <label for="is-search-input-6">
+    	  <span class="is-screen-reader-text">Buscar por:</span>
+      	  <input type="search" id="is-search-input-523" name="s" value="" class="is-search-input" placeholder="Pesquisar..." autocomplete="off"><span class="is-loader-image" style="display: none"></span>
+      </label>
+      
+      <img onclick="startDictation()" id="microphone-dictation"src="https://i.imgur.com/cHidSVu.gif" tabindex="0"/>
+      <span id="microfone-screen-reader" aria-hidden="true" class="is-screen-reader-text">Aperte a tecla control do teclado por pelo menos 3 segundos para habilitar o reconhecimento de voz. Use o comando "Pesquisar por" seguido de uma plavara ou frase para realizar busca no site</span>
+
+      <button type="submit" class="is-search-submit">Buscar
+          <span class="is-screen-reader-text">Botão de busca</span><span class="is-search-icon"></span>
+        </button>
+        <input type="hidden" name="id" value="6">
+
+    </form>
+    
+  </body>
+
+</html>
